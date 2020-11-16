@@ -12,6 +12,13 @@
         <module>dw-common</module>
         <module>dw-mock</module>
         <module>dw-logger</module>
+        <module>dw-flumeinterceptor</module>
+        <module>dw-adsRegionTop3sku</module>
+        <module>dw-publisher</module>
+        <module>dw-realtime</module>
+        <module>dw-canal</module>
+        <module>dw-hive2es</module>
+        <module>dw-dict</module>
     </modules>
 
     <parent>
@@ -32,7 +39,8 @@
         <httpmime.version>4.3.6</httpmime.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.reporting.outputEncoding>UTF-8
+        </project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
 

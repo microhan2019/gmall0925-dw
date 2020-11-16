@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dw-publisher" />
+        <module name="dw-hive2es" />
+        <module name="dw-canal" />
+        <module name="dw-mock" />
+        <module name="dw-dict" />
+        <module name="dw-common" />
+        <module name="dw-f;ume-interceptor" />
+        <module name="dw-adsRegionTop3sku" />
+        <module name="dw-flume-interceptor" />
+        <module name="dw-logger" />
+        <module name="dw-flumeinterceptor" />
+        <module name="dw-realtime" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="dw-flume-interceptor" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

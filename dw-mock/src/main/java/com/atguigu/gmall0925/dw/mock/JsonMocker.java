@@ -124,7 +124,7 @@ public class JsonMocker {
      `area` string COMMENT '城市' */
 
 
-        String mid= "mid_"+ RandomNum.getRandInt(1,500);
+        String mid= "mid_"+ RandomNum.getRandInt(1,50);
         String uid=""+ RandomNum.getRandInt(1,500);
         String os=osOptionGroup.getRandomOpt().getValue();
         String appid=this.appId;
@@ -153,9 +153,15 @@ public class JsonMocker {
         for (int i = 0; i < jsonMocker.startupNum; i++) {
             String startupLog = jsonMocker.initStartupLog();
             jsonMocker.sendLog(startupLog);
-            while (jsonMocker.isQuitGroup.getRandomOpt().getValue()){
+            while (!jsonMocker.isQuitGroup.getRandomOpt().getValue()){
                 String eventLog = jsonMocker.initEventLog(startupLog);
                 jsonMocker.sendLog(eventLog);
+
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }
 
